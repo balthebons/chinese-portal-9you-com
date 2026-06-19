@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>九游 · 阅读与对照</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+      background: #f7f3ed;
+      color: #2c2a28;
+      line-height: 1.75;
+      padding: 1.5rem;
+    }
+    .page {
+      max-width: 820px;
+      margin: 2rem auto;
+      background: #fcfaf7;
+      padding: 2.8rem 2.2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin-bottom: 0.2rem;
+      border-left: 4px solid #b08968;
+      padding-left: 1.2rem;
+      color: #3f3a35;
+    }
+    .subhead {
+      font-size: 1rem;
+      color: #7a716a;
+      margin-bottom: 2.4rem;
+      padding-left: 1.6rem;
+    }
+    .opening {
+      font-size: 1.12rem;
+      background: #efe9e2;
+      padding: 1.4rem 1.8rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      color: #3b3732;
+    }
+    .opening strong {
+      color: #6e5a47;
+      font-weight: 600;
+    }
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin: 2.2rem 0 0.8rem 0;
+      color: #4c443c;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+    }
+    .section-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #ddd6cd;
+      margin-left: 0.6rem;
+    }
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      margin: 1.2rem 0 1.8rem;
+    }
+    .feature-card {
+      flex: 1 1 200px;
+      background: #f5f0ea;
+      padding: 1.2rem 1.4rem;
+      border-radius: 10px;
+    }
+    .feature-card h3 {
+      font-size: 1.08rem;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+      color: #3f3730;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #5f554b;
+    }
+    .quote-block {
+      background: #f0ebe4;
+      border-left: 4px solid #b08968;
+      padding: 1rem 1.6rem;
+      margin: 1.8rem 0;
+      border-radius: 0 8px 8px 0;
+      color: #3d3731;
+      font-style: normal;
+    }
+    .quote-block .source {
+      margin-top: 0.4rem;
+      font-size: 0.88rem;
+      color: #7a6e62;
+    }
+    .scenario-list {
+      list-style: none;
+      margin: 1.2rem 0 1.6rem;
+    }
+    .scenario-list li {
+      padding: 0.5rem 0 0.5rem 1.6rem;
+      position: relative;
+      border-bottom: 1px dashed #e2d9d0;
+    }
+    .scenario-list li::before {
+      content: "·";
+      position: absolute;
+      left: 0.4rem;
+      color: #b08968;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 1.2;
+    }
+    .faq-item {
+      margin: 1.2rem 0;
+    }
+    .faq-item p:first-child {
+      font-weight: 500;
+      color: #4c443c;
+      margin-bottom: 0.2rem;
+    }
+    .faq-item p:last-child {
+      padding-left: 1.2rem;
+      color: #5a5046;
+    }
+    .closing {
+      margin: 2.6rem 0 1.4rem;
+      padding: 1.4rem 1.8rem;
+      background: #f1ece5;
+      border-radius: 10px;
+      font-size: 1.02rem;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ddd6cd;
+      margin: 2.2rem 0 1.4rem;
+    }
+    @media (max-width: 600px) {
+      .page { padding: 1.8rem 1.2rem; }
+      h1 { font-size: 1.8rem; padding-left: 0.8rem; }
+      .feature-grid { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>九游</h1>
+  <div class="subhead">日常查询 · 对照阅读 · 延伸理解</div>
+
+  <div class="opening">
+    <strong>打开一个网站，有时不是为了“逛”，而是为了查、对、读。</strong><br>
+    使用者往往带着具体的疑问——某个称谓的准确写法、一段表述的上下文、不同类目之间的关联。而一个好用的中文信息平台，恰恰应该在这些场景里提供清晰的参照。
+  </div>
+
+  <div class="section-title">特点</div>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>结构化呈现</h3>
+      <p>分类清晰，层级一致，适合快速定位所需条目。</p>
+    </div>
+    <div class="feature-card">
+      <h3>多源对照</h3>
+      <p>同一主题下收录不同角度的表述，便于比对。</p>
+    </div>
+    <div class="feature-card">
+      <h3>密度适中</h3>
+      <p>每段信息量可控，不堆砌，适合耐心阅读。</p>
+    </div>
+    <div class="feature-card">
+      <h3>低噪界面</h3>
+      <p>广告与干扰极少，专注内容本身。</p>
+    </div>
+  </div>
+
+  <div class="section-title">常见使用场景</div>
+  <ul class="scenario-list">
+    <li>查询某个词汇在特定语境下的标准写法或常见变体</li>
+    <li>对比不同来源对同一概念的释义与分类方式</li>
+    <li>延伸阅读：从一条条目出发，沿链接找到相关主题</li>
+    <li>作为写作时的参考索引，确认用词与表述习惯</li>
+  </ul>
+
+  <div class="quote-block">
+    一位用户曾这样描述：「我把它当作一个安静的参考架——不需要登录、不需要注册，打开就能对一下自己记的笔记。」
+    <div class="source">——摘自使用反馈，2025</div>
+  </div>
+
+  <div class="section-title">关于 <a href="https://chinese-portal-9you.com" style="color:#6e5a47; text-decoration:underline #b08968 1px; text-underline-offset:3px;">九游</a> 的 FAQ 摘要</div>
+  <div class="faq-item">
+    <p>这个网站收录的内容有多广？</p>
+    <p>涵盖多个中文知识类目，以工具性条目为主，不限于单一领域。具体范围可在站内浏览分类索引。</p>
+  </div>
+  <div class="faq-item">
+    <p>页面信息的更新频率如何？</p>
+    <p>持续维护，新增与修订不固定，以提升准确性和覆盖度为优先。</p>
+  </div>
+  <div class="faq-item">
+    <p>我可以直接引用站内内容吗？</p>
+    <p>引用时建议标明出处。网站本身不设付费墙，内容可自由阅读。</p>
+  </div>
+
+  <div class="closing">
+    日常中，我们常常需要一份不打扰、不催促的参考。打开 <a href="https://chinese-portal-9you.com" style="color:#6e5a47; text-decoration:underline #b08968 1px; text-underline-offset:3px;">九游</a>，就像翻开一本排版整齐的笔记——查完即走，或顺着看下去，全凭自己。
+  </div>
+
+  <hr>
+  <div style="font-size:0.85rem; color:#8c8075; text-align:center; letter-spacing:0.02em;">
+    内容索引 · 参考阅读 · 对照查询
+  </div>
+</div>
+</body>
+</html>
